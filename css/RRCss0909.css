@@ -1,0 +1,238 @@
+
+/* styles -----------------------------------*/
+body,html{ width: 100%; height: 100%;  font-family: sans-serif, 微軟正黑體; font-size: 18px;line-height: 18px;}
+        *{ box-sizing: border-box; margin: 0; border: 0; padding: 0; clear: both;}
+
+nav{
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+}
+nav > section{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+nav > section > #logo { 
+	width: 120px;
+	padding:20px;
+}
+nav > section > #about {
+	padding: 20px;
+}
+a{
+	text-decoration:none;
+	color: black;
+}
+a:hover{
+	color: gray;
+}
+section > .white{
+	background-color:white;
+	width: 100%;
+}
+header{
+	grid-gap: 1rem;
+	max-width: 700px;
+	margin: 0 auto;
+	height:300px;
+	background-color: white;
+	padding: 20px;
+}
+header > .name{
+	float: left;
+	display: block;
+	font-family:arial Regular;
+	line-height: 1.5em;
+	padding-top: 50px;
+}
+main{
+
+	width: 100%;
+	margin: 0 auto;	
+}
+main > section{
+	
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+/* bt1 -----------------------------------*/
+.project1 {
+	display: block;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+}
+.project1 img{
+	transform: translateY(10px);
+	transition: 1s;
+	max-width: 500px;
+}
+.project-info{
+	position:absolute;
+    top: 0;
+    left:20px;
+	width: auto;
+    height: 100%;
+    transform: translateY(10px);
+    opacity: 0;
+	color: white;
+	z-index: 100;
+}
+.project1:hover .project-info{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	opacity: 1;
+}
+.project1:hover img{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5))  brightness(.5);
+}
+.project-info > h1{
+	font-family: Arial Black;
+	font-size: 2em;
+}
+.project-info > p{
+	font-family: Arial;
+	font-size: 1em;		
+}
+
+/* bt2 -----------------------------------*/
+.project2 { 
+	display: inline-block;
+	float: right;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.project2 img{
+	transform: translateY(10px);
+	transition: 1s;
+	max-width: 500px;
+	height: 280px;
+	
+}
+.project2:hover .project-info{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	opacity: 1;
+}
+.project2:hover img{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5))  brightness(.5);
+}
+
+/* bt3 -----------------------------------*/
+.project3 { 
+	display: block;
+	float: left;
+	position: relative;
+	
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+.project3 img{
+	transform: translateY(10px);
+	transition: 1s;
+	max-width: 500px;
+}
+.project3:hover .project-info{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	opacity: 1;
+}
+.project3:hover img{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 1s;
+	filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5))  brightness(.5);
+}
+
+/* footer -----------------------------------*/
+footer {
+	position: relative;
+	clear: both; 
+	width: 100%;
+	height: auto;
+	background-color: ;
+	font-size: 0.5em;
+	color: rgb(120,120,120,1);
+	padding-top: 20px;
+	text-align: center;
+}
+footer section{
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+/* RWD -----------------------------------*/
+@media (max-width:600px){
+	main > section{
+		padding-top: 80px;
+		
+	}
+	.project1 {
+		width:100%;
+		margin: 0 auto;
+
+	}
+	.project1 img {
+		transform: translateY(0px);
+		max-width: 100%;	
+	}
+	.project2 {
+		display: block;
+		width:100%;
+		margin: 0 auto;
+		left: 0;
+	}
+	.project2 img {
+		display: block;
+		transform: translateY(0px);
+		max-width: 100%;
+		height: auto;
+	}
+	.project3 {
+		width:100%;
+		margin: 0 auto;
+		padding: 0px;
+	}
+	.project3 img {
+		transform: translateY(0px);
+		max-width: 100%;
+		justify-content: center;	
+	}
+	.project-info {
+		left:0px;
+		opacity: 1;
+		color: rgb(70,70,70,1);
+		margin-top:  -80px;
+		line-height: 0.5em;
+	}
+	.project-info > h1{
+		font-size: 1.6em;
+	}
+	.project-info > p{
+		font-size: 0.9em;
+		line-height: 1em;
+	}
+}
+@media (max-width:900px){
+	
+}
+
+@media (min-width:1920px){
+	
+}

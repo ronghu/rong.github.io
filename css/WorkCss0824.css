@@ -1,0 +1,147 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 1178px) {
+  header {
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 30px;
+	grid-auto-flow: column;
+  }
+
+	.BG{
+		width: 100%;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    overflow: hidden;
+	}
+  
+}
+
+
+@media (min-width: 620px) {
+  main {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  
+  section {
+    break-inside: avoid;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+     column-count: 3;
+  }
+}
+
+
+
+
+/* styles -----------------------------------*/
+body,html{ width: 100%; height: 100%;  font-family: sans-serif; font-size: 18px;line-height: 1.5rem;}
+        *{ margin: 0; padding: 0; }
+
+header{
+	
+	display: grid; 
+	grid-auto-flow: column;
+	grid-auto-columns: 65px;
+	grid-template-rows: 1fr 50px 50px 1fr 1fr; 
+	grid-column-gap: 30px;
+	grid-row-gap: 0px; 
+	width: 1200px;
+	height: 400px;
+	background-color: white;
+	margin: 0 auto;
+	
+	padding: 20px;
+}
+#logo { 
+	position: fixed;
+	width: 50px;
+}
+#about {
+	position: fixed;
+	padding:1100px;
+	padding-top: 10px;
+}
+.row1{
+	grid-area: 3 / 2 / 4 / 4; 
+}
+.row2{
+	grid-area: 3 / 4 / 4 / 6; 
+}
+.row3{
+	grid-area: 3 / 7 / 4 / 9;
+	width: 100px;
+}
+ul{
+	display: grid;
+	grid: auto-flow / auto 1fr;
+  }
+li{
+	grid-column: auto-flow;
+	display: grid;
+	grid-template-columns: subgrid;
+  }
+h3{
+	line-height: 2.5em;
+	padding-top: 0px;
+}
+
+
+
+.BG{
+	
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	background-image:url(../images/GS/_53I5102_w1920_1.jpg);)
+	background-size:auto;
+	background-attachment:fixed;
+	background-position: center center; 
+	background-repeat: no-repeat; 
+}
+
+.container { 
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	grid-gap: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.container > .row{
+	background-color:#e9ebee;
+	
+}
+.container img{
+	max-width:350px;
+	padding: 15px;
+}
+section{
+	
+	width: 100%;
+	margin: 0 auto;
+	background-color:#e9ebee;
+}
+article{
+	position: relative;
+}
+.title{
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color:#e9ebee;
+	padding:15px;
+}
+.title h1{
+	font-family: Arial Black;
+	line-height: 1px;
+}
+
+
+
+
